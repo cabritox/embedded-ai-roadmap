@@ -1,0 +1,1 @@
+/home/juanpy/Escritorio/embedded-ai-roadmap/phases/phase-01-foundations/month-01-hal-bsp/week-02-event-fsm/day-01-traits/target/debug/day-01-traits: /home/juanpy/Escritorio/embedded-ai-roadmap/phases/phase-01-foundations/month-01-hal-bsp/week-02-event-fsm/day-01-traits/src/main.rs
