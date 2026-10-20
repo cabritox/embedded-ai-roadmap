@@ -1,0 +1,1 @@
+/home/juanpy/Escritorio/embedded-ai-roadmap/phases/phase-01-foundations/month-01-hal-bsp/week-02-rust-traits/day-02-embedded-hal/target/debug/day-02-embedded-hal: /home/juanpy/Escritorio/embedded-ai-roadmap/phases/phase-01-foundations/month-01-hal-bsp/week-02-rust-traits/day-02-embedded-hal/src/main.rs
