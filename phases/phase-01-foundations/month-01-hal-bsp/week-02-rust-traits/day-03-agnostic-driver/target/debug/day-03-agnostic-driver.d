@@ -1,0 +1,1 @@
+/home/juanpy/Escritorio/embedded-ai-roadmap/phases/phase-01-foundations/month-01-hal-bsp/week-02-rust-traits/day-03-agnostic-driver/target/debug/day-03-agnostic-driver: /home/juanpy/Escritorio/embedded-ai-roadmap/phases/phase-01-foundations/month-01-hal-bsp/week-02-rust-traits/day-03-agnostic-driver/src/main.rs
