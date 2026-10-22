@@ -1,0 +1,10 @@
+[package]
+name = "monitor-voltaje"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+embedded-hal = "1.0"

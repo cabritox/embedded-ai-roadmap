@@ -22,10 +22,11 @@ Crear un módulo que acepta cualquier pieza de hardware, siempre y cuando cumpla
 * **Teoría:** Uso de Genéricos (`<T>`) para inyectar hardware en una estructura sin amarrarnos a un microcontrolador específico.
 * **Práctica:** Escribir un driver para un sensor I2C genérico. El driver no incluirá librerías del ESP32 ni del STM32; solo dependerá de `embedded-hal`.
 
-### Día 4: Prompting y Contratos Estrictos en Rust
-Adaptar nuestra estrategia de CDD (Desarrollo Guiado por Contratos) para trabajar con IAs en el ecosistema Rust.
-* **Teoría:** Cómo el *Borrow Checker* (Comprobador de préstamos) y el tipado fuerte de Rust actúan como un supervisor implacable para el código generado por IA.
-* **Práctica:** Diseñar un *Prompt* estructurado exigiéndole a la IA que escriba un driver de un sensor real utilizando EXCLUSIVAMENTE Traits de `embedded-hal`, prohibiéndole alucinar librerías propietarias.
+### Día 4: Spec-Driven Development (SDD) y Contratos Estrictos en Rust
+Evolución de la "ingeniería de prompts" temporal hacia el desarrollo industrial definitivo. La IA deja de ser un "creador de código libre" y pasa a ser un extractor de datos sometido a nuestras reglas arquitectónicas.
+- **Teoría (El Flujo del Arquitecto):** Separación de poderes en SDD. El ingeniero humano define la frontera matemática y lógica (El Contrato / `Trait`) y la auditoría (El Host Test). La IA se limita a implementar los detalles de hardware físico (`Driver`).
+- **Práctica:** Diseño de un `Trait` (`MonitorVoltaje`) exigiendo referencias mutables (`&mut self`) para interactuar con hardware real, y generación de una implementación I2C agnóstica para un ADC (ADS1115).
+- **El Cambio de Paradigma:** No memorizar código; auditar y construir "trampas" de compilación que impidan a la IA (o a un programador junior) inyectar código acoplado, rompiendo la dependencia del microcontrolador específico.
 
 ### Día 5: Proyecto Integrador: Host Testing de un Driver Rust
 El equivalente a nuestro Simulador UART de C, pero con herramientas modernas de Rust.
